@@ -1,4 +1,44 @@
 <html>
+	
+<style> 
+div
+{
+	width:20px;
+	height:20px;
+	background:red;
+	position:relative;
+	animation:myfirst 12s;
+	-webkit-animation:myfirst 12s; /* Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:500px; top:0px;}
+	50%  {background:blue; left:500px; top:500px;}
+	75%  {background:green; left:0px; top:500px;}
+	100% {background:red; left:0px; top:0px;}
+	
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:500px; top:1000px;}
+	50%  {background:blue; left:500px; top:1000px;}
+	75%  {background:green; left:0px; top:1000px;}
+	100% {background:red; left:0px; top:0px;}
+	
+}
+</style>
+
+
+
+
+
+<div></div>
+
+
 <body background="排行榜背景.jpg"></body>
 <p>(本排行榜按照经验和所学综合排名，如做的不准确请私信)</p>
 <table brorder="1">
