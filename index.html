@@ -1,0 +1,298 @@
+<title>魔宇科技</title>
+<head>
+<meta charset="utf-8">
+</head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+    overflow: hidden;
+  }
+
+  li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+</style>
+
+<ul>
+  <li><a class="" href="index.html">主页</a></li>
+  <li><a href="">产品</a></li>
+  <li><a href="htmls/index2.html">关于我们</a></li>
+  <li><a href="">加入我们</a></li>
+</ul>
+<font color="red">
+  <h3>猜你喜欢</h3>
+</font>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <a href=""><img decoding="async" src="files/img1.jpg" style="width:100%"></a>
+
+    <div class="text">文本 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <a href=""><img decoding="async" src="files/img2.jpg" style="width:100%"></a>
+    <div class="text">文本 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <a href=""><img decoding="async" src="files/img3.jpg" style="width:100%"></a>
+    <div class="text">文本 3</div>
+  </div>
+
+
+</div>
+<br>
+
+<div class="align">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<style>
+  * {
+    box-sizing: border-box
+  }
+
+  .align {
+    position: absolute;
+    left: 200px
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .mySlides {
+    display: none
+  }
+
+
+
+  /* 幻灯片容器 */
+  .slideshow-container {
+    max-width: 600px;
+    height: 300px;
+
+  }
+
+  h3 {
+    color: orange;
+  }
+
+  /* 下一张 & 上一张 按钮 */
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* 定位 "下一张" 按钮靠右 */
+
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* 标题文本 */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 数字文本 (1/3 等) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 1px 12px;
+    position: absolute;
+    top: 27%;
+  }
+
+  /* 标记符号 */
+  .dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* 淡出动画 */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+  .friend{color:#bbb}
+  .friendlylink{position: absolute;
+                right:500px;
+                top:100px}
+</style>
+<style>
+
+#glitcher span{font-size:90px;display:block;letter-spacing:8px;font-weight:bold;line-height:0}
+#glitcher{
+              position:absolute;
+              bottom:20%;
+              left:30%}
+#glitcher span{color:#000000;animation:glitch1 4s infinite;animation-delay:4s}
+#glitcher span:nth-child(2){color:#67f3da;animation:glitch2 4s infinite}
+#glitcher span:nth-child(3){color:#f16f6f;animation:glitch3 4s infinite}
+.noGlitch #glitcher span{animation:none;color:#555}
+@keyframes glitch1{0%{transform:none;opacity:1}
+7%{transform:skew(-0.5deg,-0.9deg);opacity:0.75}
+10%{transform:none;opacity:1}
+27%{transform:none;opacity:1}
+30%{transform:skew(0.8deg,-0.1deg);opacity:0.75}
+35%{transform:none;opacity:1}
+52%{transform:none;opacity:1}
+55%{transform:skew(-1deg,0.2deg);opacity:0.75}
+50%{transform:none;opacity:1}
+72%{transform:none;opacity:1}
+75%{transform:skew(0.4deg,1deg);opacity:0.75}
+80%{transform:none;opacity:1}
+100%{transform:none;opacity:1}
+}
+@keyframes glitch2{0%{transform:none;opacity:0.25}
+7%{transform:translate(-2px,-3px);opacity:0.5}
+10%{transform:none;opacity:0.25}
+27%{transform:none;opacity:0.25}
+30%{transform:translate(-5px,-2px);opacity:0.5}
+35%{transform:none;opacity:0.25}
+52%{transform:none;opacity:0.25}
+55%{transform:translate(-5px,-1px);opacity:0.5}
+50%{transform:none;opacity:0.25}
+72%{transform:none;opacity:0.25}
+75%{transform:translate(-2px,-6px);opacity:0.5}
+80%{transform:none;opacity:0.25}
+100%{transform:none;opacity:0.25}
+}
+@keyframes glitch3{0%{transform:none;opacity:0.25}
+7%{transform:translate(2px,3px);opacity:0.5}
+10%{transform:none;opacity:0.25}
+27%{transform:none;opacity:0.25}
+30%{transform:translate(5px,2px);opacity:0.5}
+35%{transform:none;opacity:0.25}
+52%{transform:none;opacity:0.25}
+55%{transform:translate(5px,1px);opacity:0.5}
+50%{transform:none;opacity:0.25}
+72%{transform:none;opacity:0.25}
+75%{transform:translate(2px,6px);opacity:0.5}
+80%{transform:none;opacity:0.25}
+100%{transform:none;opacity:0.25}
+}
+</style>
+<script>var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // 切换时间为 2 秒
+  }
+</script>
+<font color="red">
+  <h3>组织简介</h3>
+</font>
+互联网时代的到来，让人类来到了一个新的纪元。<br>
+这是一个青少年组织，名为魔宇科技，<br>
+由全国各地00后和10后组成的互联网组织<br>
+他们努力、上进、敢于拼搏，在同龄人中水平较高<br>
+加入我们，加入这个团队，让你了解互联网和代码的世界<br>
+<div class="friendlylink">
+<h3 class="friend">友情链接</h3>
+<h4 class="friend">技术指导</h4>
+<a class="friend" href="https://www.runoob.com">菜鸟教程</a>
+<a class="friend" href="https://www.w3school.com.cn">w3school</a>
+<h4 class="friend">建站指导</h4>
+<a class="friend" href="https://www..com">爱玩微信的皮卡丘</a>
+<h4 class="friend">开发者<br>website-报錯-龙城</h4>
+<a class="friend" href="https://www..com">github</a>
+<a class="friend" href="https://www..com">gitee</a>
+<a class="friend" href="https://www..com">抖音</a>
+<h4 class="friend">合作者<br>.Respect</h4>
+<a class="friend" href="https://www..com">github</a>
+<a class="friend" href="https://www..com">gitee</a>
+<a class="friend" href="https://www..com">抖音</a>
+</div>
+<center>
+<div id="glitcher">
+<span>魔 宇 科 技</span>
+<span>魔 宇 科 技</span>
+<span>魔 宇 科 技</span>
+</center>
