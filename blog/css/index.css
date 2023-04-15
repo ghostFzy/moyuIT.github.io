@@ -1,0 +1,110 @@
+body{
+        background:linear-gradient(to left,#000000,#8e44ad,#0000ff)
+}
+.travel{
+           height:90px;
+           width:200px;
+           border-radius:40px;
+           position:absolute;
+           left:40%;
+          top:25%;
+          background:linear-gradient(to top,#00ffff,#3498db);
+          font-size:35px;          
+}
+.star,.star1,.star2{
+       height:10px;
+       width:10px;
+       border-radius:50%;
+       background-color:white;
+        position:absolute;
+        
+       }
+.star{animation:star 12s infinite;}
+.star1{animation:star1 12s infinite;}
+.star2{animation:star2 12s infinite;}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    width:110px;
+    position:absolute;
+    right:0;
+    top:0;
+  }
+
+  li {
+    float: left;
+  
+  }
+
+  li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+h3 a{color:white}
+.hk{position:absolute;
+     left:40%;
+     bottom:10%;
+     text-align:center;
+     
+     }
+@keyframes star{
+                         
+	0%{background:white; right:0; top:25px;}
+	50%{background:#3498db; right:1400px; top:500px;
+                  filter:blur(10px)}
+                 100%{background:white; right:0; top:25px;
+                       filter:blur(0px)}
+}
+@keyframes star1{
+                         
+	0%{background:white; right:0; top:100px;
+                     }
+	50%{background:green; right:1400px; top:650px;
+                       filter:blur(10px)}
+                 100%{background:white; right:0; top:100px;
+                   filter:blur(0px)}
+}
+@keyframes star2{
+                         
+	0%{background:white; right:0; top:200px;
+                    }
+	50%{background:purple; right:1400px; top:800px;
+filter:blur(10px)}
+                 100%{background:white; right:0; top:200px;
+                  filter:blur(0px)}
+}
+@keyframes satellite{
+                    0%{left:0}
+                   50%{left:70%}
+                  100%{left:0}
+}
+h1{
+     color:white;
+     font-size:80px;}
+.satellite{
+      position:absolute;
+      bottom:10%;
+     z-index:-1;
+      animation:satellite 20s infinite}
+.jieshao{
+            font-size:35px;
+            color:white}
+
+.img{height:60px;
+         width:60px;
+        border-radius:50%;
+        position:absolute;
+	bottom:70%;}
+#xiaodong{position:absolute;
+	right:55%}
