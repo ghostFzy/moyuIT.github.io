@@ -1,7 +1,7 @@
 <html lang="en" dir="Itr">
  <head> 
   <meta charset="utf-8">
-   <link href="//moyukeji.github.io/blog/css/login.css">
+   <link href="//moyukeji.github.io/blog/css/login.css" rel="stylesheet">
   <title>登录</title> 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
@@ -12,13 +12,13 @@
    <br>
    <div id="v4" class="txtb"> 
     <input type="text" id="username"> 
-    <span id="v5" data-placeholder="元老阁成员专属账号"></span>
+    <span id="v5" data-placeholder="账号"></span>
    </div> 
   <br>
    <div id="v6" class="txtb"> 
    
     <input type="password" id="passwd">
-    <span id="v7" data-placeholder="元老阁成员专属密码"></span>
+    <span id="v7" data-placeholder="密码"></span>
    </div> 
    <div id="v8" align="center"> <br><br><br>
     <input id="v9" type="button" class="b" value="登录" onclick="login()"> 
@@ -29,8 +29,8 @@
    </div> 
    <div id="v12"> 
     <div id="v13" class="bottom-text"> 
-     <font id="v14" color="red">注:只有魔域信息科技元老阁成员有账户</font> 
-     <a id="v15" href="index.html">返回</a> 
+     <font id="v14" color="red">没有账号？</font> 
+     <a id="v15" href="signup.html">注册</a> 
     </div> 
     <input id="v16" type="button" class="dh" onclick="a()"> 
     <script type="text/javascript">
@@ -85,7 +85,7 @@
 				} else {
 					if (account.username == username && account.passwd == passwd) {     
                       	alert('登录成功');
-                        window.location.href='edit.html';
+                        window.location.href='//moyukeji.github.io/blog/blog.html';
 					} else {
 						alert('密码错误');
 					}
