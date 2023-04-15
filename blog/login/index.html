@@ -1,0 +1,116 @@
+<html lang="en" dir="Itr">
+ <head> 
+  <meta charset="utf-8">
+   <link href="//moyukeji.github.io/blog/css/index.css">
+  <title>登录</title> 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+ </head> 
+ <body id="v1" class="body"> 
+  <form id="v2" action="index.html" class="login-form"> 
+   <h1 id="v3" style="color:black;">Login</h1> 
+   <br>
+   <div id="v4" class="txtb"> 
+    <input type="text" id="username"> 
+    <span id="v5" data-placeholder="元老阁成员专属账号"></span>
+   </div> 
+  <br>
+   <div id="v6" class="txtb"> 
+   
+    <input type="password" id="passwd">
+    <span id="v7" data-placeholder="元老阁成员专属密码"></span>
+   </div> 
+   <div id="v8" align="center"> <br><br><br>
+    <input id="v9" type="button" class="b" value="登录" onclick="login()"> 
+    
+   </div> 
+   <div id="v11" align="center"><br>
+    <input type="button" class="b100" id="btnClear" value="清空" onclick="doClear()"> 
+   </div> 
+   <div id="v12"> 
+    <div id="v13" class="bottom-text"> 
+     <font id="v14" color="red">注:只有魔域信息科技元老阁成员有账户</font> 
+     <a id="v15" href="index.html">返回</a> 
+    </div> 
+    <input id="v16" type="button" class="dh" onclick="a()"> 
+    <script type="text/javascript">
+    
+
+                
+                function a(){
+                if(passwd.type=="password"){
+                        passwd.type = "text"
+                       }else{
+                        passwd.type = "password"
+                        }
+                        
+                      }
+               
+//focus=允许输入,blur=无法输入
+              $(".txtb input").on("focus",function(){
+                $(this).addClass("focus");//这里的focus并不代表允许输入，而是class中的样式
+                });
+ 
+                $(".txtb input").on("blur",function(){
+                 if($(this).val() == "")
+                 $(this).removeClass("focus");//同理
+                });
+                
+                
+                let accountAll = [{ // 存储账户json数据的数组
+					username: "冯梓洋",
+					passwd: 'longcheng666'
+				},
+				{
+					username: "周子聪",
+					passwd: 'zzc'
+				},
+				{
+					username: "速扇",
+					passwd: 'lq'
+				},
+                {
+                    username: 'shanji303',
+                    passwd: 'hh20100107'
+                }
+			]
+			function login() { //登陆判断
+				let username = document.getElementById('username').value;
+				let passwd = document.getElementById('passwd').value;
+				let account = accountAll.filter(function(e) {
+					return e.username == username
+				})[0]; // 筛选账号返回数组，不存在则返回空数组
+				if (!account) {
+					alert('账户不存在');
+				} else {
+					if (account.username == username && account.passwd == passwd) {     
+                      	alert('登录成功');
+                        window.location.href='edit.html';
+					} else {
+						alert('密码错误');
+					}
+				}
+			}
+			
+                function doClear() { //获取页面所有的input框，是text和password框，内容=空串
+				let inputs = document.getElementsByTagName("input");
+				for (let i = 0; i < inputs.length; i++) {
+					if (inputs[i].type == 'text' || inputs[i].type == 'password') {
+						inputs[i].value = '';
+					}
+				}
+			}
+			//给清除按钮增加onclick事件
+            let btnClear = document.getElementById('btnClear');
+			btnClear.addEventListener('click', function() {
+				doClear();
+			});
+		
+        
+
+                </script> 
+   </div> 
+  </form> 
+ </body>
+ 
+</html>
