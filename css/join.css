@@ -1,0 +1,7 @@
+@keyframes abc{
+  from{letter-spacing:-50px;
+       filter:blur(40px)}
+to{letter-spacing:10px;
+       filter:blur(0px)}
+
+}
