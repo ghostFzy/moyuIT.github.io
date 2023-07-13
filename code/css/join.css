@@ -1,0 +1,12 @@
+.contect{filter:blur(10px);
+         animation:abc 3s infinite}
+.text{letter-spacing:-50px;
+  animation:abc 3s infinite
+  }
+@keyframes abc{
+  from{letter-spacing:-50px;
+       filter:blur(10px)}
+to{letter-spacing:10px;
+       filter:blur(0px)}
+
+}
