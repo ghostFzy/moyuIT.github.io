@@ -1,96 +1,50 @@
-<html><head><title>魔宇科技</title>
-<link href="//moyukeji.github.io/css/index.css" rel="stylesheet">
+<html>
+ <head>
+  <title>魔宇科技</title>
+  <meta charset="utf-8">
+  <link href="/code/css/index.css">
+  <script src="/code/js/index.js"></script>
+ </head>
+ <body>
+   <div id="glitcher">
+    <span style="animation: title 4s;">魔 宇 科 技</span>
+    <span>魔 宇 科 技</span>
+    <span>魔 宇 科 技</span>
+   </div>
 
-<meta charset="utf-8">
-</head>
+  <ul>
+   <li><a href="index.html">主页</a></li>
+   <li><a href="/code/html/product.html">产品</a></li>
+   <li><a href="/code/html/about.html">关于我们</a></li>
+   <li><a href="/code/html/join.html">加入我们</a></li>
+  </ul>
 
-
-<body><ul>
-  <li><a class="" href="index.html">主页</a></li>
-  <li><a href="">产品</a></li>
-  <li><a href="htmls/index2.html">关于我们</a></li>
-  <li><a href="htmls/join.html">加入我们</a></li>
-</ul>
-<font color="red">
-  <h3>猜你喜欢</h3>
-</font>
-<div class="slideshow-container">
-  <div class="mySlides fade" style="display: none;">
-    <div class="numbertext">1 / 3</div>
-    <a href=""><img decoding="async" src="img/img1.jpg" style="width:100%"></a>
-
-    <div class="text">文本 1</div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+<a href="/code/html/product.html"><img class="picture" src="/file/img/img1.jpg"></a>
+    </div>
+    <div class="mySlides fade">
+<a href="/code/html/product.html"><img class="picture" src="/file/img/img2.jpg"></a>
+    </div>
+    <div class="mySlides fade">
+<a href="/code/html/product.html"><img class="picture" src="/file/img/img3.jpg"></a>
+    </div>
+  <div style="position: absolute;z-index: 2;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
-  <div class="mySlides fade" style="display: block;">
-    <div class="numbertext">2 / 3</div>
-    <a href=""><img decoding="async" src="img/img2.jpg" style="width:100%"></a>
-    <div class="text">文本 2</div>
+  <p class="main">给世界&nbsp;魔改出些颜色看看</p>
+  <div class="blog">
+    <a href="/blog/index.html" class="bloglink">&nbsp;&nbsp;&nbsp;魔宇<br>黑客论坛</a>
+<a href="/blog/index.html"><div class="blog1">
+ <img src="/file/img/kali.jpg" height="170" width="300">
+    <p>kali学得好，监狱进的早</p>
+  </div></a>
+  <a href="/blog/index.html"><div class="blog2">
+    <img src="/file/img/kali.jpg" height="170" width="300">
+    <p>hacknet玩的好，kali不愁学不好</p>
+  </div></a>
   </div>
-
-  <div class="mySlides fade" style="display: none;">
-    <div class="numbertext">3 / 3</div>
-    <a href=""><img decoding="async" src="img/img3.jpg" style="width:100%"></a>
-    <div class="text">文本 3</div>
-  </div>
-
-
-</div>
-<br>
-
-<div class="align">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot active" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-<script>var slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // 切换时间为 2 秒
-  }
-</script>
-<font color="red">
-  <h3>组织简介</h3>
-</font>
-互联网时代的到来，让人类来到了一个新的纪元。<br>
-这是一个青少年组织，名为魔宇科技，<br>
-由全国各地00后和10后组成的互联网组织<br>
-他们努力、上进、敢于拼搏，在同龄人中水平较高<br>
-加入我们，加入这个团队，让你了解互联网和代码的世界<br>
-<div class="friendlylink">
-<h3 class="friend">友情链接</h3>
-<h4 class="friend">技术指导</h4>
-<a class="friend" href="https://www.runoob.com">菜鸟教程</a>
-<a class="friend" href="https://www.w3school.com.cn">w3school</a>
-<h4 class="friend">建站指导</h4>
-<a class="friend" href="https://github.com/PKQYPKJ">爱玩微信的皮卡丘</a>
-<h4 class="friend">开发者<br>website-报錯-龙城</h4>
-<a class="friend" href="https://www.github.com/moyukeji">github</a>
-<a class="friend" href="https://www.gitee.com/moyukejigroup">gitee</a>
-<a class="friend" href="https://m.douyin.com/share/user/MS4wLjABAAAA2niPfwwnd48F92AHjuW6gxBB9ZF_LUPg18cUXCDH8eA">抖音</a>
-<h4 class="friend">合作者<br>.Respect</h4>
-<a class="friend" href="https://github.com/zhouzicong0">github</a>
-<a class="friend" href="https://www.douyin.com/user/MS4wLjABAAAAiXHQ9mA7phyMAycIuRiyDk_ZLD0ST7wgtMOZsEo5tIK0htb4s7qIpBOIusXnTz-K">抖音</a>
-</div>
-<center>
-<div id="glitcher">
-<span>魔 宇 科 技</span>
-<span>魔 宇 科 技</span>
-<span>魔 宇 科 技</span>
-</div></center>
-</body></html>
+  </body>
+</html>
