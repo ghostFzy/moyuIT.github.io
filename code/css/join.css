@@ -1,6 +1,6 @@
-.contect{filter:blur(10px);
+.contect{
          animation:abc 3s}
-.text{letter-spacing:-50px;
+.text{
   animation:abc 3s;
   }
 @keyframes abc{
