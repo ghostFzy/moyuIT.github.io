@@ -1,7 +1,7 @@
 .contect{filter:blur(10px);
          animation:abc 3s}
 .text{letter-spacing:-50px;
-  animation:abc 3s infinite
+  animation:abc 3s;
   }
 @keyframes abc{
   from{letter-spacing:-50px;
