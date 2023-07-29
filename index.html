@@ -1,13 +1,16 @@
-<html>
+  <html>
  <head>
   <title>魔宇科技</title>
   <meta charset="utf-8">
-  <link href="/code/css/index.css" rel="stylesheet" type="text/css">
-  <link href="/file/img/logo.ico" rel="icon">
+  <style>
+  body{overflow: hidden;
+       margin: 0;
+       padding: 0;}
+  </style>
  </head>
  <body>
    <div id="glitcher">
-    <span>魔 宇 科 技</span>
+    <span style="animation: title 4s;">魔 宇 科 技</span>
     <span>魔 宇 科 技</span>
     <span>魔 宇 科 技</span>
    </div>
@@ -37,15 +40,331 @@
   <p class="main">给世界&nbsp;魔改出些颜色看看</p>
   <div class="blog">
     <a href="/blog/index.html" class="bloglink">&nbsp;&nbsp;&nbsp;魔宇<br>黑客论坛</a>
-<a href="/blog/index.html"><div class="blog1">
+<div class="blog1"><a href="/blog/index.html">
  <img src="/file/img/kali.jpg" height="170" width="300">
-    <p>kali学得好，监狱进的早</p>
-  </div></a>
-  <a href="/blog/index.html"><div class="blog2">
-    <img src="/file/img/kali.jpg" height="170" width="300">
-    <p>hacknet玩的好，kali不愁学不好</p>
-  </div></a>
+    <p>kali学得好，监狱进的早</p></a>
   </div>
-   <script src="/code/js/index.js"></script>
-  </body>
+  <div class="blog2"><a href="/blog/index.html">
+    <img src="/file/img/kali.jpg" height="170" width="300">
+    <p>hacknet玩的好，kali不愁学不好</p></a>
+  </div>
+  </div>
+  <script>
+  var slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // 切换时间为 2 秒
+    }
+    
+  </script>
+  
+  <style>
+ 
+   
+ /*定义轮播图长宽*/  
+  .picture{
+           min-width: 100%;
+           height: 450px;    
+  }
+
+  
+    /* 幻灯片容器 */
+    .slideshow-container {
+      width: 100%;
+      position: absolute;
+      top:0;
+      z-index: 0;
+    } 
+
+.mySlides{display: block;}
+    
+     /* 标记符号 */
+  .dot {
+    height: 6px;
+    width: 35px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+  /*将正在播放的符号变为深灰色*/
+.active,.dot:hover {
+    background-color: #717171;
+  }
+
+  /* 淡出动画 */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+/*列表整体样式*/  
+ul{position: absolute;
+    z-index: 3;
+    top:70px;
+    border-radius: 3px;
+    list-style-type: none;/*把列表前面的点去掉*/
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    background:linear-gradient(60deg,#f1f1f1,#b0b0b0,#f1f1f1);
+    background-size:300%;
+	  animation:ul 10s infinite;
+	}
+
+/*列表中的超链接样式*/
+li a {
+  z-index: 10;
+    display: block;
+    color: #000;
+    padding: 18px 5px;
+    text-decoration: none;/*去掉超链接下面的横线*/
+    font-size: 22px;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*列表的背景动画*/
+	@keyframes ul{
+   from{background-position:0%}
+   to{background-position:100%}
+   }
+
+/*魔宇科技四字的动画*/
+#glitcher span{text-align: center;
+               font-size:40px;
+               display: block;
+               font-weight:bold;
+               letter-spacing: 3px;
+               line-height:0;
+              }
+
+#glitcher{z-index: 2;
+          position:absolute;
+          top:4%; 
+          }
+
+#glitcher span
+              {color:#000000;animation:glitch1 6s infinite;
+               animation-delay:8s
+              }
+
+#glitcher span:nth-child(2)
+                           {color:#8e44ad;
+                            animation:glitch2 6s infinite
+                           }
+
+#glitcher span:nth-child(3)
+                          {color:dodgerblue;
+                           animation:glitch3 6s infinite
+                          }
+
+@keyframes glitch1{
+                   0%{transform:none;
+                      opacity:1
+                     }
+                   7%{transform:skew(-0.5deg,-0.9deg);
+                      opacity:0.75
+                     }
+                   10%{transform:none;
+                       opacity:1
+                       }
+                   27%{transform:none;
+                       opacity:1
+                      }
+                   30%{transform:skew(0.8deg,-0.1deg);
+                       opacity:0.75
+                      }
+                   35%{transform:none;
+                       opacity:1
+                       }
+                   52%{transform:none;
+                       opacity:1
+                      }
+                   55%{transform:skew(-1deg,0.2deg);
+                       opacity:0.75
+                      }
+                   50%{transform:none;
+                       opacity:1
+                      }
+                   72%{transform:none;
+                       opacity:1
+                      }
+                   75%{transform:skew(0.4deg,1deg);
+                       opacity:0.75
+                      }
+                   80%{transform:none;
+                       opacity:1
+                      }
+                   100%{transform:none;
+                        opacity:1
+                       }
+                  }
+@keyframes glitch2{
+                   0%{transform:none;
+                      opacity:0.25
+                      }
+                   7%{transform:translate(-2px,-3px);
+                      opacity:0.5
+                      }
+                  10%{transform:none;
+                      opacity:0.25
+                     }
+                  27%{transform:none;
+                      opacity:0.25
+                     }
+                  30%{transform:translate(-5px,-2px);
+                      opacity:0.5
+                     }
+                  35%{transform:none;
+                      opacity:0.25
+                     }
+                  52%{transform:none;
+                      opacity:0.25
+                     }
+                  55%{transform:translate(-5px,-1px);
+                      opacity:0.5
+                     }
+                  50%{transform:none;
+                      opacity:0.25
+                     }
+                  72%{transform:none;
+                  opacity:0.25
+                     }
+                  90%{transform:translate(-2px,-6px);
+                      opacity:0.5
+                     }
+                  100%{transform:none;
+                       opacity:0.25
+                      }
+}
+@keyframes glitch3{
+                   0%{transform:none;
+                      opacity:0.25
+                     }
+                   7%{transform:translate(2px,3px);
+                      opacity:0.5
+                     }
+                   10%{transform:none;
+                       opacity:0.25
+                      }
+                   27%{transform:none;
+                       opacity:0.25
+                      }
+                   30%{transform:translate(5px,2px);
+                       opacity:0.5
+                      }
+                   35%{transform:none;
+                       opacity:0.25
+                      }
+                   52%{transform:none;
+                       opacity:0.25
+                      }
+                   55%{transform:translate(5px,1px);
+                       opacity:0.5
+                      }
+                   50%{transform:none;
+                       opacity:0.25
+                      }
+                   90%{transform:translate(2px,6px);
+                       opacity:0.5
+                       }
+                  100%{
+                       transform:none;
+                       opacity:0.25
+                      }
+                 }
+
+ .main{
+       position: absolute;
+       font-size: 50px;
+       color: white;
+       top:240px;
+       left: 350px;
+       z-index: 10;
+       text-shadow: 5px 5px 5px gray;
+       box-shadow: 0px 6px white;
+ }                
+
+.blog{
+      background-color: gainsboro;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      bottom: -450px;
+      z-index: 0;
+}                 
+.blog1{
+        position: relative;
+        bottom: 22px;
+        left: 160px;
+        }
+
+.blog2{
+        position: relative;
+        bottom: 260px;
+        right: -590px;
+        }
+
+.blog1 p,.blog2 p{
+         font-size: 20px;
+         color: #4c0468;  
+}
+
+.bloglink{
+          position: absolute;
+          left: 470px;
+          font-size: 25px;
+          color: transparent;
+          background: linear-gradient(240deg,orange,red,orange);
+          background-size: 300%;
+          background-clip: text;
+          -webkit-background-clip: text;
+          text-decoration:underline;
+          z-index: 4;
+          animation:ul 6s infinite;
+}
+</style>
+ </body>
 </html>
