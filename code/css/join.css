@@ -1,6 +1,7 @@
 .contect{
          animation:abc 3s}
 .text{
+    letter-spacing:10px;
   animation:abc 3s;
   }
 @keyframes abc{
