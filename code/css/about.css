@@ -1,53 +1,17 @@
-ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #111;
-    }
-body {
-      background-color:#666
-    }
-
-    .firsttable {
-      background: linear-gradient(240deg,  #8e44ad, #6633ff, blue);
-      background-size: 200%;
-      animation: animate 8s linear infinite;
-      border-radius:30px
-    }
-   
-    table,tr,td{border-radius:30px}
-    @keyframes animate {
-      0% {
-        background-position: 0%;
-      }
-
-      100% {
-        background-position: 100%;
-      }
-    }
-
-    h3 {
-      z-index: 10;
-      color: orange;
-      position: aboslute;
-      top: 0
-    }
-img{
-       border-radius:10px}
+.logo{
+      border-radius: 50%;
+      position: absolute;
+      left: 120px;
+      top: 75px;
+}
+.p1{
+    color: rgb(34, 149, 250);
+    font-size: 23px;
+}
+.time{
+    color: orange;
+}
+.p2{
+    color: rgb(170, 167, 5);
+    font-size: 20px;
+}
