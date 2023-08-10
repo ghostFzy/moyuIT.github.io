@@ -1,13 +1,40 @@
 .contect{
-         animation:abc 3s}
+         animation:filter 3s;
+         }
 .text{
     letter-spacing:10px;
-  animation:abc 3s;
+    animation:abc 3s;
+    position:absolute;
+    z-index:100;
+    left:33%;
   }
-@keyframes abc{
+.wechat{
+        animation:wechat 3s;
+        position:absolute;
+        top:100px;
+        left:35%;
+        }
+.douyin{
+        animation:douyin 3s;
+        position:absolute;
+        top:800px;
+        left:34%;
+        }
+@keyframes filter{
   from{letter-spacing:-50px;
        filter:blur(10px)}
-to{letter-spacing:10px;
+  to{letter-spacing:10px;
        filter:blur(0px)}
-
+}
+@keyframes wechat{
+        0%{top:0;
+             }
+        100%{top:100px;
+             }
+}
+@keyframes douyin{
+        0%{top:1000px;
+             }
+        100%{top:800px;
+             }
 }
