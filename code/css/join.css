@@ -3,7 +3,7 @@
          }
 .text{
     letter-spacing:10px;
-    animation:abc 3s;
+    animation:filter 3s;
     position:absolute;
     z-index:100;
     left:33%;
