@@ -1,0 +1,19 @@
+.box{height:150px;
+     width:150px;
+     border-style:solid;
+     border-color:gray;
+     border-radius:20px;
+     float:left;
+     margin:5px;
+     text-align:center;}
+.box:hover{
+          transform:translateY(10px);
+          box-shadow:10px 10px 10px blue;
+}
+.title{
+      font-size:25px;
+      font-style:italic;
+      color:DodgerBlue;
+      position:absolute;
+      /*z-index:10;*/
+      left:0;}
