@@ -1,4 +1,4 @@
- body{overflow: hidden;
+body{overflow: hidden;
        margin: 0;
        padding: 0;
       background:gainsboro;}
@@ -318,4 +318,11 @@ ul{
           left:750px;
          font-size:60px;
 }
+}
+@media screen and (min-height:1500px){
+    .blog{display:none;}
+    .main{font-size:40px;
+          left:470px;}
+    .picture{height:1400px;
+             }
 }
