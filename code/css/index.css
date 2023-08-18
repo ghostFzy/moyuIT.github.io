@@ -325,4 +325,22 @@ ul{
           left:470px;}
     .picture{height:1400px;
              }
+	ul{width:250px;
+       height:550px;
+       top:300px;}
+    li a{font-size:35px;
+         line-height:60px;}
+    #glitcher span{font-size:70px;
+                  }
+    #glitcher{position:absolute;
+                   top:140px;}
+   .dot{width:80px;
+       height:12px;
+       margin:10px;}
+   .father-dot{
+              display:block;
+              position:absolute;
+              top:1805px;}
+    .blog1{position:absolute;
+           top:1750px;}
 }
