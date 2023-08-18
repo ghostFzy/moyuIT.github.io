@@ -321,15 +321,16 @@ ul{
 }
 @media screen and (min-height:1500px){
     .blog{display:none;}
-    .main{font-size:40px;
-          left:470px;}
-    .picture{height:1400px;
+    .main{font-size:65px;
+          left:540px;
+          top:1100px;}
+    .picture{height:1800px;
              }
 	ul{width:250px;
        height:550px;
        top:300px;}
-    li a{font-size:35px;
-         line-height:60px;}
+    li a{font-size:40px;
+         line-height:100px;}
     #glitcher span{font-size:70px;
                   }
     #glitcher{position:absolute;
