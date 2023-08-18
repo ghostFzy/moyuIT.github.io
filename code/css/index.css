@@ -1,4 +1,4 @@
-body{overflow: hidden;
+ body{overflow: hidden;
        margin: 0;
        padding: 0;
       background:gainsboro;}
@@ -99,11 +99,11 @@ li a:hover {
    }
 
 /*魔宇科技四字的动画*/
-#glitcher span{text-align: center;
+#glitcher span{
                font-size:40px;
                display: block;
                font-weight:bold;
-               letter-spacing: 1px;
+               letter-spacing:1px;
                line-height:0;
               }
 
@@ -250,7 +250,7 @@ li a:hover {
        top:240px;
        left: 350px;
        z-index: 10;
-       text-shadow: 5px 5px 5px gray;
+       text-shadow: 5px 15px 15px gray;
        box-shadow: 0px 6px white;
  }                
 
@@ -261,6 +261,7 @@ li a:hover {
       position: absolute;
       bottom: -450px;
       z-index: 0;
+      
 }                 
 .blog1{
         position: relative;
@@ -321,16 +322,19 @@ ul{
 }
 @media screen and (min-height:1500px){
     .blog{display:none;}
-    .main{font-size:65px;
-          left:540px;
-          top:1100px;}
+    .main{font-size:95px;
+          left:0px;
+          top:1100px;
+          z-index:1000;
+         letter-spacing:-10px}
     .picture{height:1800px;
+              /*width:100%;*/
              }
-	ul{width:250px;
+     ul{width:250px;
        height:550px;
        top:300px;}
-    li a{font-size:40px;
-         line-height:100px;}
+    li a{font-size:35px;
+         line-height:60px;}
     #glitcher span{font-size:70px;
                   }
     #glitcher{position:absolute;
@@ -343,5 +347,8 @@ ul{
               position:absolute;
               top:1805px;}
     .blog1{position:absolute;
-           top:1750px;}
+           top:0px;
+           z-index:10000000;
+           display:inline-block;
+          }
 }
