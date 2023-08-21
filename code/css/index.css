@@ -334,7 +334,7 @@ ul{
      ul{width:250px;
        height:550px;
        top:300px;}
-    li a{font-size:45px;
+    li a{font-size:48px;
          line-height:80px;}
     #glitcher span{font-size:70px;
                   }
@@ -344,7 +344,7 @@ ul{
        height:12px;
        margin:10px;}
    .father-dot{
-              display:block;
+              
               position:absolute;
               top:1805px;}
   #blog1,#blog2,#bloglink
