@@ -8,7 +8,8 @@
            height: 450px;    
   }
 
-
+#blog1,#blog2,#bloglink{
+             display:none}
   
     /* 幻灯片容器 */
     .slideshow-container {
@@ -280,7 +281,7 @@ li a:hover {
          color: #4c0468;  
 }
 
-.bloglink{
+.bloglink,#bloglink{
           position: absolute;
           left: 470px;
           font-size: 25px;
@@ -334,7 +335,7 @@ ul{
        height:550px;
        top:300px;}
     li a{font-size:45px;
-         line-height:80px;}
+         line-height:60px;}
     #glitcher span{font-size:70px;
                   }
     #glitcher{position:absolute;
@@ -346,9 +347,12 @@ ul{
               display:block;
               position:absolute;
               top:1805px;}
-    .blog1{position:absolute;
-           top:0px;
-           z-index:10000000;
-           display:inline-block;
-          }
-}
+  #blog1,#blog2,#bloglink
+              {position:absolute;
+                top:1900px;
+           display:block;
+           font-size:30px
+           }
+     
+#bloglink{left:530px}
+#blog2{left:800px;}
