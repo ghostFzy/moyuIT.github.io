@@ -313,7 +313,7 @@ li a:hover {
                  top:657px;
 }
 ul{
-    position-absolute;
+    position:absolute;
     top:110px;
 }
 .main{
@@ -350,7 +350,6 @@ ul{
        height:12px;
        margin:10px;}
    .father-dot{
-              
               position:absolute;
               top:1805px;}
   #blog1,#blog2,#bloglink
