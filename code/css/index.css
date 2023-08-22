@@ -321,7 +321,7 @@ ul{
          font-size:60px;
 }
 }
-@media screen and (min-height:1500px){
+@media screen and (min-height:1700px){
     .blog{display:none;}
     .main{font-size:95px;
           left:0px;
