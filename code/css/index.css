@@ -7,7 +7,7 @@
            min-width: 100%;
            height: 450px;    
   }
-
+/*将手机端适配的下方模块隐藏*/
 #blog1,#blog2,#bloglink{
              display:none}
   
@@ -99,7 +99,7 @@ li a:hover {
    to{background-position:100%}
    }
 
-/*魔宇科技四字的动画*/
+/*顶部魔宇工作室五个字的动画*/
 #glitcher span{
                font-size:40px;
                display: block;
@@ -243,7 +243,7 @@ li a:hover {
                        opacity:0.25
                       }
                  }
-
+/*轮播图上面的大标题*/
  .main{
        position: absolute;
        font-size: 50px;
@@ -254,7 +254,7 @@ li a:hover {
        text-shadow: 5px 15px 15px gray;
        box-shadow: 0px 6px white;
  }                
-
+/*电脑端下面灰色的div(史山)*/
 .blog{
       background-color: gainsboro;
       height: 100%;
@@ -263,24 +263,25 @@ li a:hover {
       bottom: -450px;
       z-index: 0;
       
-}                 
+}
+/*kali模块*/
 .blog1{
         position: relative;
         bottom: 22px;
         left: 160px;
         }
-
+/*hacknet模块*/
 .blog2{
         position: relative;
         bottom: 260px;
         right: -590px;
         }
-
+/*kali和hacknet两个模块的文字*/
 .blog1 p,.blog2 p{
          font-size: 20px;
          color: #4c0468;  
 }
-
+/*技术博客*/
 .bloglink,#bloglink{
           position: absolute;
           left: 470px;
@@ -294,6 +295,7 @@ li a:hover {
           z-index: 4;
           animation:ul 6s infinite;
 }
+/*大屏电脑端适配*/
 @media screen and (min-height: 900px) {
    .picture{
           min-width: 100%;
@@ -321,8 +323,11 @@ ul{
          font-size:60px;
 }
 }
+/*手机端适配*/
 @media screen and (min-height:1700px){
+/*背景颜色代替灰色div*/
     body{background:gainsboro;}
+/*隐藏下方灰色div(不隐藏会出bug)*/
     .blog{display:none;}
     .main{font-size:95px;
           left:0px;
@@ -351,7 +356,7 @@ ul{
   #blog1,#blog2,#bloglink
               {position:absolute;
                 top:1900px;
-           display:block;
+           display:block;/*显示手机端适配下方模块*/
            font-size:30px
            }
      
