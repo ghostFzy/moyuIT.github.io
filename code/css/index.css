@@ -307,7 +307,7 @@ li a:hover {
         width:1000%;
 }
 .father-dot{
-                 position-absolute;
+                 position:absolute;
                  top:657px;
 }
 ul{
@@ -354,5 +354,6 @@ ul{
            font-size:30px
            }
      
-#bloglink{left:530px}
+#bloglink{left:530px;
+	 font-size:35px;}
 #blog2{left:800px;}
