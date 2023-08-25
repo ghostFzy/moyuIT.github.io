@@ -6,9 +6,17 @@
      float:left;
      margin:5px;
      text-align:center;}
+.box img{border-top-left-radius:10px;
+              border-top-right-radius:10px;}
 .box:hover{
           transform:translateY(10px);
           box-shadow:10px 10px 10px blue;
+          animation:border 3s;
+         border-color:dodgerblue;
+}
+@keyframes border{
+                              from{border-color:gray;}
+                              to{border-color:dodgerblue;}
 }
 .title{
       font-size:25px;
