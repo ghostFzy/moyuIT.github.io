@@ -326,7 +326,7 @@ ul{
 }
 }
 /*手机端适配*/
-@media screen and (min-height:1700px){
+@media screen and (min-height:2300px){
 /*背景颜色代替灰色div*/
     body{background:gainsboro;}
 /*隐藏下方灰色div(不隐藏会出bug)*/
